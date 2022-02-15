@@ -93,7 +93,7 @@ a.skip{
 }
 
 /* Requirement 4 code here*/
-ul a:focus{
+a:focus{
   border-top: 2px solid yellow;
 }
 
@@ -207,7 +207,6 @@ img {
     position: relative;
     left: 0px;
     top: 20px;
-    border-top: 2px solid yellow;
   }
 
   .container{
