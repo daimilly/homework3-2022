@@ -88,7 +88,7 @@ a.skip{
   transition: left 1s ease-out;
   z-index: 1;
   /* Requirement 3 code here*/
-  position: relative;
+  position: absolute;
   left: -500px;
 }
 
@@ -101,14 +101,14 @@ a:focus{
   /* Requirement 5 code here*/
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-row-gap: 30px;
 }
 
 
 /* Requirements 6-10 here: */
 .intro {
-  background-color: #858585;
-  background-image: url(../images/header.jpg);
+  background: url(../images/header.jpg), #DDDDDD;
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -178,11 +178,12 @@ img {
 
 .text {
   max-height: 25vh;
-  overflow: auto;
+  overflow: scroll;
   /* display: inline-block;
   line-height: normal;
   vertical-align: middle; */
-  margin: auto;
+  /* margin: auto; */
+  align-self: center;
 }
 
 .text h2 {
@@ -204,7 +205,7 @@ img {
 
   /* Requirements 12-15 here: */
   a.skip:focus {
-    position: relative;
+    position: absolute;
     left: 0px;
     top: 20px;
   }
@@ -220,17 +221,17 @@ img {
     grid-column: 3 / span 2;
     grid-row: 1;
   }
-  
+
   .clients  {
     grid-column: 2 / span 2;
     grid-row: 2;
   }
-  
+
   .method  {
     grid-column: 3 / span 2;
     grid-row: 3;
   }
-  
+
   .contact  {
     grid-column: 2 / span 2;
     grid-row: 4;
